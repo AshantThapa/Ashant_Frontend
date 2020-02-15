@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+<title>Agriculture Assist</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="resources/css/screen.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+<div id="layout">
+  <div id="header">
+    <h1 id="logo"><a href="viewarticle.html">Agriculture Assist</a></h1>
+    <hr class="noscreen" />
+    <p class="noscreen noprint"> <em>Jump to: <a href="#obsah">content</a>, <a href="#nav">navigation</a>.</em> </p>
+  </div>
+  <hr class="noscreen" />
+  <div id="nav" class="box">
+    <ul>
+     <li id="active"><a href="adminpage.html"><h2>Articles</h2></a>
+        <li id="active"><a href="updateform.html"><h2>Update Blogs</h2></a>
+        <li id="active"><a href="adminprofile.html"><h2>Profile</h2></a>
+        <li id="active"><a href="image.html"><h2>ImageUpload</h2></a>
+        <li id="active"><a href="updateimage.html"><h2>Updateimage</h2></a>
+        <li id="active"><a href="viewquestion.html"><h2>Question</h2></a>
+        <li id="active"><a onclick="logout('token','id','firstname','lastname', 'address', 'email');"><h2>Log Out</h2></a>
+     
+    </ul>
+    <hr class="noscreen" />
+  </div>
+<div id="obsah" class="content box">
+      <div class="in">
+        <div class="shadow"> <img src="resources/images/image.jpg" alt="" class="thumb" /> </div>
+        <div id="questionlist" class="box"></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div id="footer" class="shadow">
+    <div class="f-left">Copyright &copy; 2008 <a href="#">Sujen Gurung</a></div>
+  </div>
+</div>
+
+
+
+</body>
+
+<script type="text/javascript" src="./resources/js/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="./resources/js/tokenVerify.js"></script>
+
+<script type="text/javascript" src="./resources/js/logout.js"></script>
+
+<script type="text/javascript" src="./resources/js/question.js"></script>
+</html>
