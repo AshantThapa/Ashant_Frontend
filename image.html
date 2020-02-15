@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN">
+<head>
+<title>Agriculture Assist</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="resources/css/screen.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+<style type="text/css">
+    .login-form {
+        width: 340px;
+        margin: 50px auto;
+    }
+    .login-form form {
+        margin-bottom: 15px;
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div id="layout">
+  <div id="header">
+    <h1 id="logo"><a href="adminpage.html">Agriculture Assist</a></h1>
+    <hr class="noscreen" />
+    <p class="noscreen noprint"> <em>Jump to: <a href="#obsah">content</a>, <a href="#nav">navigation</a>.</em> </p>
+  </div>
+  <hr class="noscreen" />
+  <div id="nav" class="box">
+    <ul>
+       <li id="active"><a href="adminpage.html"><h2>Articles</h2></a>
+        <li id="active"><a href="updateform.html"><h2>Update Blogs</h2></a>
+        <li id="active"><a href="adminprofile.html"><h2>Profile</h2></a>
+        <li id="active"><a href="image.html"><h2>ImageUpload</h2></a>
+        <li id="active"><a href="updateimage.html"><h2>Updateimage</h2></a>
+        <li id="active"><a href="viewquestion.html"><h2>Question</h2></a>
+        <li id="active"><a onclick="logout('token','id','firstname','lastname', 'address', 'email');"><h2>Log Out</h2></a>
+     
+    </ul>
+    <hr class="noscreen" />
+  </div>
+
+    <div id="container" class="box">
+  
+
+        <div class="login-form">
+        <form id="addimage" method="POST" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label>Image:</label>
+                        <input id="img" class="form-control" type="file" name="img" required="required" />
+                    </div>
+
+                    <div class="form-group">
+                        <input id="title" class="form-control" type="text" name="title" placeholder="Title" required="required" />
+                    </div>
+
+                    <div class="form-group">
+                        <input id="description" class="form-control" type="text" name="description" placeholder="Description" required="required" /><br><br>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit"  name="submit" value="Add" class="btn btn-primary btn-block"/>
+                    </div>
+                </form>
+            </div>
+      
+  </div>
+<div id="footer" class="shadow">
+    <div class="f-left">Copyright &copy; 2008 <a href="#">Sujen Gurung</a></div>
+  </div>
+</body>
+
+<script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="resources/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="resources/js/tokenVerify.js"></script>
+
+<script type="text/javascript" src="resources/js/logout.js"></script>
+
+<script type="text/javascript" src="resources/js/image.js"></script>
+</html>
+
+
+
